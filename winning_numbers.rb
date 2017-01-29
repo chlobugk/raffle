@@ -1,16 +1,16 @@
-def raffle_ticket(num)
-def raffle_winner(win)
-array_winner = [1,2,3,4]
-array_winner = win.shuffle
-array_winner.each do |win|
+def raffle_ticket(num, win)
+array = []
+
 
 		if num == win
-			puts 'True'
+			array << 'True'
 		
 		else
-			puts 'False'
+			array << 'False'
 		end 
-	end
+	
+	array
 end
-end
+
+
 
