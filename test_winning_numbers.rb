@@ -6,4 +6,13 @@ class TestRaffle < MiniTest::Test
 		# results = raffle_ticket()
 		assert_equal(['False'], raffle_ticket('', '1234'))
 	end
+
+	def test_winner_results_true
+		assert_equal(['True'], raffle_ticket('1234', '1234'))
+	end
+
+	def test_loser_returns_false
+		assert_equal(['False'], raffle_ticket('5555', '5678'))
+	end
+
 end
