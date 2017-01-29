@@ -13,4 +13,13 @@ class TestRaffleFunction < MiniTest::Test
 	def test_returning_true
 		assert_equal(['True'], off_by_one(5578, 5678))
 	end
+
+	def test_returning_false
+		assert_equal(['False'], off_by_one(4778, 5678))
+	end
+
+	def test_return_true
+		assert_equal(['True'], off_by_one(9876, 8876))
+	end
+	
 end
